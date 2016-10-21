@@ -16,12 +16,12 @@ public class FPP1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        // VARIABLES DE AÑO
         int año, b;
         año=introduceAño();
         CalcularAño(año);
     }
-    public static int introduceAño(){
+    public static int introduceAño(){//METODO PARA PEDIR AÑO
         int año;
         Scanner Teclado=new Scanner(System.in);
         System.out.println("Introduce el Año");
@@ -29,7 +29,7 @@ public class FPP1 {
         
         return año;
     }
-    public static void CalcularAño(int a){
+    public static void CalcularAño(int a){//METODO PARA CLACULAR AÑO BICIESTO O NO
       
   if( (a%400==0) &&  (a%100==0) || (a%4==0 ) )
    System.out.print("El año es bisiesto"); 
